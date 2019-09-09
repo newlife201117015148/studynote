@@ -43,7 +43,7 @@ public class Test2 {
 		System.out.println(date.getYear() + 1900);// 年要加1900
 		System.out.println(date.getMonth() + 1);// 月要加1
 		System.out.println(date.getDate());// 得到日
-		System.out.println(date.getHours());// 得到小时
+		System.out.println(date.getHours());// 得到小时 24小时制
 		System.out.println(date.getMinutes());// 得到分钟
 		System.out.println(date.getSeconds());// 得到秒
 		System.out.println(date.getDay());// 得到星期星期天到星期六是0到6
@@ -92,7 +92,7 @@ public class Test2 {
 		System.out.println(calendar.get(Calendar.MONTH) + 1);
 		System.out.println(calendar.get(Calendar.DATE));
 		System.out.println(calendar.get(Calendar.HOUR));
-		System.out.println(calendar.get(Calendar.HOUR_OF_DAY));
+		System.out.println(calendar.get(Calendar.HOUR_OF_DAY));//24小时制
 		System.out.println(calendar.get(Calendar.MINUTE));
 		System.out.println(calendar.get(Calendar.SECOND));
 		System.out.println("0000000");
@@ -183,7 +183,6 @@ public class Test2 {
 			}
 			System.out.println("---------");
 		}
-		
 		System.out.println("---------------------// SimpleDateFormat 日历格式类---------------------");
 		Locale.setDefault(Locale.CHINA);
 		SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日  HH时mm分ss秒  EEE a  Z");
@@ -191,10 +190,16 @@ public class Test2 {
 		
 		String time1 = "2018-08-08 20:20:20";
 		
-		SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-d HH:mm:ss");
+		SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		
 		Date data2 = format1.parse(time1);
+		Date d1 = new Date();
 		
+		Calendar ca1 = Calendar.getInstance();
+		Calendar ca2 = Calendar.getInstance();
+		ca1.setTimeInMillis(d1.getTime()-data2.getTime());
+		System.out.println(DateFormat.getDateInstance(DateFormat.FULL).format(ca1.getTime()));
+		System.out.println(Calendar.getInstance().getTimeInMillis());
 		System.out.println(data2.toLocaleString());
 
 	}

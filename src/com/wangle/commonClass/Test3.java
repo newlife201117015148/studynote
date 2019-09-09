@@ -2,41 +2,41 @@ package com.wangle.commonClass;
 
 import java.awt.AWTException;
 import java.awt.Robot;
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
+import java.awt.event.MouseEvent;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.Arrays;
 import java.util.Set;
 
 /**
- * @Àà Ãû£º Test2 @¹¦ÄÜÃèÊö£º TODO @×÷ÕßĞÅÏ¢£º wangle @´´½¨Ê±¼ä£º 2019Äê4ÔÂ28ÈÕÉÏÎç10:22:51 @ĞŞ¸Ä±¸×¢£º
+ * @ç±» åï¼š Test2 @åŠŸèƒ½æè¿°ï¼š TODO @ä½œè€…ä¿¡æ¯ï¼š wangle @åˆ›å»ºæ—¶é—´ï¼š 2019å¹´4æœˆ28æ—¥ä¸Šåˆ10:22:51 @ä¿®æ”¹å¤‡æ³¨ï¼š
  */
 public class Test3 {
-	// String ×Ö·û´®Àà
-	// StringBuffer »º³å×Ö·û´®(Í¬²½)
-	// StringBuilder »º³å×Ö·û´®£¨²»Í¬²½£©
+	// String å­—ç¬¦ä¸²ç±»
+	// StringBuffer ç¼“å†²å­—ç¬¦ä¸²(åŒæ­¥)
+	// StringBuilder ç¼“å†²å­—ç¬¦ä¸²ï¼ˆä¸åŒæ­¥ï¼‰
 
-	// Integer/Bouble/Float/Character/Long/Short/Byte/Boolean °ü×°Àà
+	// Integer/Bouble/Float/Character/Long/Short/Byte/Boolean åŒ…è£…ç±»
 
-	// System ÏµÍ³Àà
-	// Runtime ÔËĞĞÀà£¬¿ÉÒÔÖ´ĞĞdosÃüÁî
+	// System ç³»ç»Ÿç±»
+	// Runtime è¿è¡Œç±»ï¼Œå¯ä»¥æ‰§è¡Œdoså‘½ä»¤
 	//
-	// Date ÈÕÆÚÀà
-	// Calendar ÈÕÀúÀà
-	// DateFormat ÈÕÀú¸ñÊ½Àà
-	// SimpleDateFormat ÈÕÀú¸ñÊ½Àà
-	// Locale Ê±ÇøÀà
+	// Date æ—¥æœŸç±»
+	// Calendar æ—¥å†ç±»
+	// DateFormat æ—¥å†æ ¼å¼ç±»
+	// SimpleDateFormat æ—¥å†æ ¼å¼ç±»
+	// Locale æ—¶åŒºç±»
 	//
-	// Math ÊıÑ§Àà
-	// Random Ëæ»úÊıÀà
-	// BigDecimal ´óÊı×ÖÀà
+	// Math æ•°å­¦ç±»
+	// Random éšæœºæ•°ç±»
+	// BigDecimal å¤§æ•°å­—ç±»
 	//
 	// Toolkit
 	// Robot
 	//
 	public static void main(String[] args) throws AWTException, InterruptedException, IOException {
 		System.out.println("---------------------Robot----------------");
+		
+		//æ§åˆ¶é”®ç›˜ã€é¼ æ ‡ï¼ˆå·¦å³å»ºï¼Œæ»šè½®ï¼‰
 		Robot robot = new Robot();
 //		for (int i = 0; i < 1100; i++) {
 //			
@@ -47,9 +47,8 @@ public class Test3 {
 //		}
 		
 //		robot.mouseMove(21, 21);
-		
-//		robot.mousePress(MouseEvent.BUTTON1_MASK);
-//		robot.mouseRelease(MouseEvent.BUTTON1_MASK);
+//		robot.mousePress(MouseEvent.BUTTON3_MASK);
+//		robot.mouseRelease(MouseEvent.BUTTON3_MASK);
 //		for (int i = 0; i < 10; i++) {
 //			Thread.sleep(100);
 //			robot.mouseWheel(-10);
@@ -60,8 +59,8 @@ public class Test3 {
 		
 		int a = 21;
 		Integer b = 33;
-		Integer c = 128;//ÕâÖÖ·½Ê½¸³ÖµÖ»ÄÜÔÚ-128~127£¬ÊÇÍ¨¹ıvalueOfÀ´¸øÖµµÃ£¬ÒâË¼ÊÇÔÚ³£Á¿³ØÖĞÓĞ-128~127µÄÊı£¬Èç¹ûÄãÉêÇëµÄÊıÔÚÕâ¸ö·¶Î§ÄÚ£¬¾Í´Ó³Ø×ÓÀïÃæÈ¡£¬²»ÊÇ¾Ínew
-		//IntegerµÄvalueOf·½·¨Ô´Âë
+		Integer c = 128;//è¿™ç§æ–¹å¼èµ‹å€¼åªèƒ½åœ¨-128~127ï¼Œæ˜¯é€šè¿‡valueOfæ¥ç»™å€¼å¾—ï¼Œæ„æ€æ˜¯åœ¨å¸¸é‡æ± ä¸­æœ‰-128~127çš„æ•°ï¼Œå¦‚æœä½ ç”³è¯·çš„æ•°åœ¨è¿™ä¸ªèŒƒå›´å†…ï¼Œå°±ä»æ± å­é‡Œé¢å–ï¼Œä¸æ˜¯å°±new
+		//Integerçš„valueOfæ–¹æ³•æºç 
 //		 public static Integer valueOf(int i) {
 //		        assert IntegerCache.high >= 127;
 //		        if (i >= IntegerCache.low && i <= IntegerCache.high)
@@ -73,50 +72,69 @@ public class Test3 {
 		int e = 128;
 		Integer f = new Integer(127);
 		Integer g = 127;
-		System.out.println(b==d);
-		System.out.println(c==e);
-		System.out.println(f==g);
+		System.out.println(b==d);//true
+		System.out.println(c==e);//true
+		System.out.println(f==g);//false
 		System.out.println("_____________");
-		System.out.println(Integer.parseInt("121213"));//Ä¬ÈÏÌîĞ´ÄÚÈİÊÇ10½øÖÆ
-//		System.out.println(Integer.parseInt("1212F3"));//ÀïÃæ²»ÄÜ´æÔÚ·ÇintµÄ×Ö·û
-//		System.out.println(Integer.parseInt("12362374276345612374"));//Ì«´óÒ²²»ĞĞ
+		/*æ€»ç»“ï¼š
+		 * â‘ ã€æ— è®ºå¦‚ä½•ï¼ŒIntegerä¸new Integerä¸ä¼šç›¸ç­‰ã€‚ä¸ä¼šç»å†æ‹†ç®±è¿‡ç¨‹ï¼Œå› ä¸ºå®ƒä»¬å­˜æ”¾å†…å­˜çš„ä½ç½®ä¸ä¸€æ ·ã€‚ï¼ˆè¦çœ‹å…·ä½“ä½ç½®ï¼Œå¯ä»¥çœ‹çœ‹è¿™ç¯‡æ–‡ç« ï¼šç‚¹å‡»æ‰“å¼€é“¾æ¥ï¼‰
+		 * 
+		 * â‘¡ã€ä¸¤ä¸ªéƒ½æ˜¯énewå‡ºæ¥çš„Integerï¼Œå¦‚æœæ•°åœ¨-128åˆ°127ä¹‹é—´ï¼Œåˆ™æ˜¯true,å¦åˆ™ä¸ºfalseã€‚
+		 * 
+		 * â‘¢ã€ä¸¤ä¸ªéƒ½æ˜¯newå‡ºæ¥çš„,åˆ™ä¸ºfalseã€‚
+		 * 
+		 * â‘£ã€intå’Œinteger(newæˆ–énew)æ¯”è¾ƒï¼Œéƒ½ä¸ºtrueï¼Œå› ä¸ºä¼šæŠŠIntegerè‡ªåŠ¨æ‹†ç®±ä¸ºintï¼Œ å…¶å®å°±æ˜¯ç›¸å½“äºä¸¤ä¸ªintç±»å‹æ¯”è¾ƒã€‚
+		 */
+		System.out.println(Integer.parseInt("121213"));//é»˜è®¤å¡«å†™å†…å®¹æ˜¯10è¿›åˆ¶
+//		System.out.println(Integer.parseInt("1212F3"));//é‡Œé¢ä¸èƒ½å­˜åœ¨éintçš„å­—ç¬¦
+//		System.out.println(Integer.parseInt("12362374276345612374"));//å¤ªå¤§ä¹Ÿä¸è¡Œ
 		
-		//ÆäËü½øÖÆ×ª»»³É10½øÖÆÓÃparseInt»òÕßvalueOf
-		System.out.println(Integer.parseInt("10011",2));//2½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.valueOf("10011",2));//2½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.parseInt("25676",8));//8½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.valueOf("25676",8));//8½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.parseInt("23D", 16));//16½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.valueOf("23D", 16));//16½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.parseInt("23D", 32));//32½øÖÆ×ª³É10½øÖÆ
-		System.out.println(Integer.valueOf("23D", 32));//32½øÖÆ×ª³É10½øÖÆ
+		//å…¶å®ƒè¿›åˆ¶è½¬æ¢æˆ10è¿›åˆ¶ç”¨parseIntæˆ–è€…valueOf
+		System.out.println(Integer.parseInt("10011",2));//2è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.valueOf("10011",2));//2è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.parseInt("25676",8));//8è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.valueOf("25676",8));//8è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.parseInt("23D", 16));//16è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.valueOf("23D", 16));//16è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.parseInt("23D", 32));//32è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
+		System.out.println(Integer.valueOf("23D", 32));//32è¿›åˆ¶è½¬æˆ10è¿›åˆ¶
 		System.out.println("_______________________");
-		//10½øÖÆ×ª³ÉÆäËü½øÖÆ
-		System.out.println(Integer.toBinaryString(123));//10½øÖÆ×ª³É2½øÖÆ
-		System.out.println(Integer.toOctalString(128));//10½øÖÆ×ª³É8½øÖÆ
-		System.out.println(Integer.toHexString(123));//10½øÖÆ×ª³É16½øÖÆ
-		System.out.println(Integer.toString(31, 32));//10½øÖÆ×ª³É32½øÖÆ
+		//10è¿›åˆ¶è½¬æˆå…¶å®ƒè¿›åˆ¶
+		System.out.println(Integer.toBinaryString(123));//10è¿›åˆ¶è½¬æˆ2è¿›åˆ¶
+		System.out.println(Integer.toOctalString(128));//10è¿›åˆ¶è½¬æˆ8è¿›åˆ¶
+		System.out.println(Integer.toHexString(123));//10è¿›åˆ¶è½¬æˆ16è¿›åˆ¶
+		System.out.println(Integer.toString(31, 32));//10è¿›åˆ¶è½¬æˆ32è¿›åˆ¶
 		System.out.println(Integer.toString(128, 8));
 		
+		Short la = 3;
 		System.out.println("--------------------System------------------");
-		//»ñÈ¡»·¾³±äÁ¿getenv
+		//è·å–ç¯å¢ƒå˜é‡getenv
 		System.out.println(System.getenv("path"));
 		
 		System.out.println(System.getenv("windir"));
 
 		System.out.println(System.getenv("classpath"));
-		//»ñÈ¡ÏµÍ³²ÎÊı
+		//è·å–ç³»ç»Ÿå‚æ•°
 		System.out.println(System.getProperty("os.name"));
-		
-		//´òÓ¡ËùÓĞÏµÍ³²ÎÊı
+		//é€€å‡ºç³»ç»Ÿ
+		//System.exit(0);
+		//è·å–æ—¶é—´æ¯«ç§’æ•°
+		System.currentTimeMillis();
+		//é€šçŸ¥åƒåœ¾å›æ”¶å™¨å›æ”¶
+		System.gc();
+		//å¤åˆ¶æ•°ç»„
+		int[] arr = new int[3];
+		System.arraycopy(new int[]{1,2,3}, 0,arr, 0, 3);
+		System.out.println(Arrays.toString(arr));
+		//æ‰“å°æ‰€æœ‰ç³»ç»Ÿå‚æ•°
 		Set<Object> keySet = System.getProperties().keySet();
 		for (Object string : keySet) {
 			System.out.println(string+"="+System.getProperty(string.toString()));
 		}
-		//»»ĞĞ
+		//æ¢è¡Œ
 		String str3= "sdfsdf"+System.lineSeparator()+"sdfsdf";
 		System.out.println(str3);
-		//ÊäÈë
+		//è¾“å…¥
 //		int i = 0;
 //		while(true){
 //			System.out.println((char)System.in.read());
@@ -124,33 +142,40 @@ public class Test3 {
 //				break;
 //			}
 //		}
-		//ÊäÈë2
-//		System.out.print("ÊäÈë");
+		//è¾“å…¥2
+//		System.out.print("è¾“å…¥");
 //		  Scanner scan = new Scanner(System.in);
 //		  String read = scan.nextLine();
-//		  System.out.println("ÊäÈëÊı¾İ£º"+read); 
+//		  System.out.println("è¾“å…¥æ•°æ®ï¼š"+read); 
 		  
-		 //ÊäÈë3
+		 //è¾“å…¥3
 //		  BufferedReader br = new BufferedReader(new InputStreamReader(System.in ));
-//		  //java.io.InputStreamReader¼Ì³ĞÁËReaderÀà
+//		  //java.io.InputStreamReaderç»§æ‰¿äº†Readerç±»
 //		  String read2 = null;
-//		  System.out.print("ÊäÈëÊı¾İ£º");
+//		  System.out.print("è¾“å…¥æ•°æ®ï¼š");
 //		  try {
 //		   read2 = br.readLine();
 //		  } catch (IOException e3) {
 //		   e3.printStackTrace();
 //		  }
-//		  System.out.println("ÊäÈëÊı¾İ£º"+read2); 
-		  //ÊäÈë4
+//		  System.out.println("è¾“å…¥æ•°æ®ï¼š"+read2); 
+		  //è¾“å…¥4
 //		 BufferedInputStream input = new BufferedInputStream(System.in);
 //		 byte[] b3 =new byte[100];
 //		int red =  input.read(b3);
 //		System.out.println(new String(b3,0,red));
 		System.out.println("=================Runtime==============");
-		//µ¥ÀıÄ£Ê½,Ö´ĞĞdosÃüÁî
+		//å•ä¾‹æ¨¡å¼,æ‰§è¡Œdoså‘½ä»¤
 		Runtime runtime = Runtime.getRuntime();
 //		runtime.exec("cmd /c start http://www.baidu.com");
-		//runtime.exec("cmd /c start D:\\ÌÚÑ¶QQ\\QQ\\Bin\\QQScLauncher.exe");
-		
+		//runtime.exec("cmd /c start D:\\è…¾è®¯QQ\\QQ\\Bin\\QQScLauncher.exe");
+		//è·å–cpuæ ¸å¿ƒæ•°
+		System.out.println(runtime.availableProcessors());
+		//è·å–å†…å­˜å‰©ä½™ç©ºé—´
+		System.out.println(runtime.freeMemory());
+		//è·å–å†…å­˜æœ€å¤§ç©ºé—´
+		System.out.println(runtime.maxMemory());
+		// è·å–å†…å­˜æ€»ç©ºé—´
+		System.out.println(runtime.totalMemory());
 	}
 }
