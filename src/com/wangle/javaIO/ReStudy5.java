@@ -4,7 +4,14 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
+/**
+ * 
+   * @类 名： ReStudy5
+   * @功能描述： dataOutoutStream 的使用
+   * @作者信息： wangle
+   * @创建时间： 2019年7月17日下午5:24:53
+   * @修改备注：
+ */
 public class ReStudy5 {
 	
 	public static void main(String[] args) throws Exception {
@@ -13,7 +20,7 @@ public class ReStudy5 {
 		
 		dataOutoutStream.writeByte(97);
 		dataOutoutStream.writeBoolean(true);
-		//	dataOutoutStream.writeBytes("dasdfasdfa");
+//			dataOutoutStream.writeBytes("dasdfasdfa");
 		dataOutoutStream.writeChar('中');
 		dataOutoutStream.writeDouble(23.3);
 		dataOutoutStream.writeFloat(3.3f);

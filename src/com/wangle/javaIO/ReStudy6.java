@@ -21,7 +21,7 @@ public class ReStudy6 {
 		//调用的是read（）方法，而该方法又被子类jiemi所重写，所以读取的时候再取反，就成功解密
 		while((len=jiemi.read(b))!=-1){
 			//len = jiemi.read(b);
-			System.out.print(new String(b,0,len));
+			System.out.println(new String(b,0,len));
 			for (int i = 0; i < b.length; i++) {
 				System.out.println(b[i]);
 			}

@@ -42,13 +42,11 @@ public class ReStudy3 {
 		long time = System.currentTimeMillis();
 		FileInputStream inputStream = new FileInputStream("b.txt");
 		BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream); 
-		//byte[] b = new byte[1024*1024];
 		int a = 0;
 		int shangyige = bufferedInputStream.read();
 		int size = 1;
 		int count = 0;
 		while((a=bufferedInputStream.read())!=-1){
-			//str+=new String(b,0,a);
 			if(shangyige==a){
 				size++;
 			}else{
@@ -65,7 +63,6 @@ public class ReStudy3 {
 			System.out.println(size);
 		}
 		inputStream.close();
-		//System.out.println(System.currentTimeMillis()-time);
 		return count;
 	}
 }

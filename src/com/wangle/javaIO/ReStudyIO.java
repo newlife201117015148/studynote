@@ -43,10 +43,10 @@ public class ReStudyIO {
 
 		// 创建文件，夹子，临时文件，
 		File file5 = new File("b.txt");
-		boolean b = file5.createNewFile();// 问什么会抛异常，因为，创建文件有可能路径不存在，或者没有创建权限
+		boolean b = file5.createNewFile();// 为什么会抛异常，因为，创建文件有可能路径不存在，或者没有创建权限
 		System.out.println(b);
-		//File file6 = File.createTempFile("aaa", "bbbb");
-		//File file6 = File.createTempFile("aaa", "bbbb",new File("d:/"));
+		//File file6 = File.createTempFile("aaa", "bbbb");//"aaa" 前缀  "bbbb" 后缀
+//		File.createTempFile("aaa", null,new File("d:/"));//null默认是.temp
 		//System.out.println(file6);
 		File file7 = new File("a/b/c/d");
 		//boolean boo = file7.mkdir();

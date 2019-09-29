@@ -23,8 +23,14 @@ public class Test02 {
 //		ServerSocket serversocket = new ServerSocket(8989);//本地访问和外网访问
 //		ServerSocket serversocket = new ServerSocket(8989,0,InetAddress.getByName("192.168.1.2"));//外网访问
 		ServerSocket serversocket = new ServerSocket(8989,0,InetAddress.getByName("127.0.0.1"));//本地访问
+		/*
+		 * ServerSocket(int port, int backlog, InetAddress bindAddr) 中的backlog是指等待连接的队列中容纳的最大连接数
+		 * 其默认值是50，如果其值小于等于0，就是采用默认值。
+		 * 一个新的客户端请求，就会往队列里面增加一个连接，accpet接收一个连接，队列就会减少一个连接。
+		 * 
+		 * bindAddr 是绑定的本地IP地址
+		 */
 		Socket socket = serversocket.accept();
-		
 		InputStream input = socket.getInputStream();
 		OutputStream output = socket.getOutputStream();
 		

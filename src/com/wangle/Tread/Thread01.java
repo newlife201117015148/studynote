@@ -1,5 +1,9 @@
 package com.wangle.Tread;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
+
 public class Thread01 extends Thread{
 	
 	
@@ -46,6 +50,35 @@ public class Thread01 extends Thread{
 		thread2.start();
 		thread3.start();
 		thread4.start();
+		
+		//通过实现callable接口的方式创建线程,
+		Callable<String> call = new myThread();
+		FutureTask<String> ft = new FutureTask<>(call);
+		Thread mythread = new Thread(ft);
+		mythread.start();
+		
+		
+		try {
+			System.out.println(ft.isCancelled());
+			System.out.println(ft.isDone());
+			System.out.println(ft.get());
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
 	}
 
+	
+	static class myThread implements Callable<String>{
+		private int num = 20;
+		@Override
+		public String call() throws Exception {
+			Thread.sleep(10000);
+			for (int i = num; i < num; i--) {
+				System.out.println(Thread.currentThread().getName()+"当前余票："+i);
+			}
+			return "sale out";
+		}
+	}
 }

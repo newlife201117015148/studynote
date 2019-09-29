@@ -22,10 +22,15 @@ public class Test07 {
 				DatagramPacket packet = new DatagramPacket(
 						b,
 						b.length,
-						InetAddress.getByName("192.168.1.2"),
+						InetAddress.getLocalHost(),
 						8989);
 				
 				datagramSocket.send(packet);
+				byte[] b2 = new byte[1024];
+				DatagramPacket packet2 = new DatagramPacket(b2, b2.length);
+				datagramSocket.receive(packet2);
+				System.out.println(new String(packet2.getData(),0,packet2.getLength()));
+				System.out.println(packet2.getSocketAddress());
 			}
 		} catch (Exception e) {
 		}finally{

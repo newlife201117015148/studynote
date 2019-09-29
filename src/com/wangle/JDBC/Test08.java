@@ -8,6 +8,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import javax.imageio.ImageIO;
+
 public class Test08 {
 	//存二进制流到数据库
 	public static void main(String[] args) throws Exception {

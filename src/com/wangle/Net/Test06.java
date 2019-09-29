@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class Test06 {
 	
@@ -21,15 +24,16 @@ public class Test06 {
 		
 		URL url = new URL("http://www.kaige123.com");
 		URLConnection conn = url.openConnection();
-		
-		InputStream in = conn.getInputStream();
-		BufferedReader reader = new BufferedReader(new InputStreamReader(in,"utf-8"));
-		String str = null;
-		while((str=reader.readLine())!=null){
-			System.out.println(str);
+		conn.connect();
+		Map<String, List<String>> fields = conn.getHeaderFields();
+		Set<String> keySet = fields.keySet();
+		for (String string : keySet) {
+			System.out.print(string+"=");
+			System.out.print(fields.get(string));
+			System.out.println();
 		}
 		
-		reader.close();
+		conn.setDoOutput(true);
 	}
 
 }

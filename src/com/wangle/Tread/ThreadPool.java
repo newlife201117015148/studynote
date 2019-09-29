@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 public class ThreadPool implements Runnable{
 	
 	public static void main(String[] args) throws InterruptedException {
-		//第一种是固定线程数，并行数量也不怕
+		//第一种是固定线程数，并行数量大也不怕
 		/*ExecutorService pool = Executors.newFixedThreadPool(10);//先用完十个，然后等待空闲的线程使用
 		for (int i = 0; i < 20; i++) {
 			pool.execute(new ThreadPool());//将实现Runnable的类对象交给线程池，执行run方法 ，执行完后，pool自动放回线程
@@ -28,6 +28,7 @@ public class ThreadPool implements Runnable{
 		//第四种单线程
 		ExecutorService pool3 = Executors.newSingleThreadExecutor();
 		pool3.execute(new ThreadPool());
+		
 	}
 
 	public void run() {
