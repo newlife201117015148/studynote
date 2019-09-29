@@ -1,4 +1,4 @@
-package com.wanngle.reflect;
+package com.wangle.reflect;
 
 public interface Person {
 

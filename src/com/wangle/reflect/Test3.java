@@ -1,4 +1,4 @@
-package com.wanngle.reflect;
+package com.wangle.reflect;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
