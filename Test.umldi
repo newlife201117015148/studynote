@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagrams:Diagrams xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.topcased.org/DI/1.0" xmlns:diagrams="http://www.topcased.org/Diagrams/1.0" xmi:id="_fqEM8AR1Eeqf9PpP4pxnRA" activeDiagram="_fqKTkAR1Eeqf9PpP4pxnRA">
+  <model href="Test.uml#_fpovIAR1Eeqf9PpP4pxnRA"/>
+  <diagrams xmi:id="_fqKTkAR1Eeqf9PpP4pxnRA" position="0,0" size="100,100" name="Test" viewport="0,0">
+    <property xmi:id="_fyVYIAR1Eeqf9PpP4pxnRA" key="pageFormatName" value="A4"/>
+    <property xmi:id="_fyVYIQR1Eeqf9PpP4pxnRA" key="diagramWidth" value="840"/>
+    <property xmi:id="_fyVYIgR1Eeqf9PpP4pxnRA" key="diagramHeight" value="1180"/>
+    <property xmi:id="_fyVYIwR1Eeqf9PpP4pxnRA" key="pageMarginName" value="Small Margin"/>
+    <property xmi:id="_fyVYJAR1Eeqf9PpP4pxnRA" key="diagramTopMargin" value="20"/>
+    <property xmi:id="_fyVYJQR1Eeqf9PpP4pxnRA" key="diagramBottomMargin" value="20"/>
+    <property xmi:id="_fyVYJgR1Eeqf9PpP4pxnRA" key="diagramLeftMargin" value="20"/>
+    <property xmi:id="_fyVYJwR1Eeqf9PpP4pxnRA" key="diagramRightMargin" value="20"/>
+    <property xmi:id="_fyVYKAR1Eeqf9PpP4pxnRA" key="orientation" value="portrait"/>
+    <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_fqKTkQR1Eeqf9PpP4pxnRA" presentation="org.topcased.modeler.uml.sequencediagram">
+      <element href="Test.uml#_fpovJQR1Eeqf9PpP4pxnRA"/>
+    </semanticModel>
+    <contained xsi:type="di:GraphNode" xmi:id="_f2Rc8AR1Eeqf9PpP4pxnRA" position="13,40" size="200,300">
+      <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_f2Rc8QR1Eeqf9PpP4pxnRA" presentation="default">
+        <element href="Test.uml#_fpovKQR1Eeqf9PpP4pxnRA"/>
+      </semanticModel>
+      <contained xsi:type="di:GraphNode" xmi:id="_f3T-wAR1Eeqf9PpP4pxnRA" position="63,40" size="20,50">
+        <semanticModel xsi:type="di:EMFSemanticModelBridge" xmi:id="_f3T-wQR1Eeqf9PpP4pxnRA" presentation="default">
+          <element href="Test.uml#_fpovKgR1Eeqf9PpP4pxnRA"/>
+        </semanticModel>
+      </contained>
+    </contained>
+  </diagrams>
+</diagrams:Diagrams>

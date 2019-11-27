@@ -3,6 +3,7 @@ package com.wangle.Swing;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Frame;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Random;
@@ -33,7 +34,7 @@ public class Test01 {
 //
 //		   成员方法：
 //		   int getState()   //获得Frame窗口的状态(Frame.Normal 表示一般状态，Frame.ICONIFIED表示最小化状态)
-//		   void setState(int state)   //获得Frame窗口的状态(Frame.Normal 表示一般状态，Frame.ICONIFIED表示最小化状态)
+//		   void setState(int state)   //设置状态
 //		   String getTitle()   //获得Frame窗口的标题
 //		   void setTitle(String title)   //设置Frame窗口的标题
 //		   boolean  isResizable()   //测试Frame窗口是否可以改变大小
@@ -63,26 +64,7 @@ public class Test01 {
 			frame.setLocation(100,100);//设置位置
 			frame.setBounds(300, 300, 220,220);//设置位置和大小
 			frame.setVisible(true);//设置可见
-			frame.addMouseListener(new MouseListener() {
-				
-				@Override
-				public void mouseReleased(MouseEvent e) {
-					// TODO Auto-generated method stub
-					
-				}
-				
-				@Override
-				public void mousePressed(MouseEvent e) {
-					// TODO Auto-generated method stub
-					
-				}
-				
-				@Override
-				public void mouseExited(MouseEvent e) {
-					// TODO Auto-generated method stub
-					
-				}
-				
+			frame.addMouseListener(new MouseAdapter() {
 				@Override
 				public void mouseEntered(MouseEvent e) {
 					// TODO Auto-generated method stub
@@ -90,11 +72,6 @@ public class Test01 {
 					frame.setLocation(random.nextInt(1024),random.nextInt(1024));//设置位置
 				}
 				
-				@Override
-				public void mouseClicked(MouseEvent e) {
-					// TODO Auto-generated method stub
-					
-				}
 			});
 			
 			

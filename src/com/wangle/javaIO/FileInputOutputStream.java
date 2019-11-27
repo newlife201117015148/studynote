@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import com.wangle.Test1;
+import com.wangle.others.Test1;
 
 public class FileInputOutputStream {
 	public static void main(String[] args){

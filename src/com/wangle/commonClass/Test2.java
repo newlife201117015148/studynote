@@ -8,7 +8,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import com.wangle.Test7.C;
+import com.wangle.others.Test7.C;
 
 /**
  * @类 名： Test2 @功能描述： TODO @作者信息： wangle @创建时间： 2019年4月28日上午10:22:51 @修改备注：

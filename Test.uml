@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_fpovIAR1Eeqf9PpP4pxnRA" name="test1">
+  <packagedElement xmi:type="uml:Package" xmi:id="_fpovIQR1Eeqf9PpP4pxnRA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_fpovIgR1Eeqf9PpP4pxnRA" name="wangle">
+      <packagedElement xmi:type="uml:Package" xmi:id="_fpovIwR1Eeqf9PpP4pxnRA" name="test">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_fpovJAR1Eeqf9PpP4pxnRA">
+          <ownedBehavior xmi:type="uml:Interaction" xmi:id="_fpovJQR1Eeqf9PpP4pxnRA">
+            <ownedAttribute xmi:id="_fpovJgR1Eeqf9PpP4pxnRA" name="property" type="_fpovKwR1Eeqf9PpP4pxnRA"/>
+            <ownedConnector xmi:id="_fpovJwR1Eeqf9PpP4pxnRA">
+              <end xmi:id="_fpovKAR1Eeqf9PpP4pxnRA" role="_fpovJgR1Eeqf9PpP4pxnRA" partWithPort="_fpovJgR1Eeqf9PpP4pxnRA"/>
+            </ownedConnector>
+            <lifeline xmi:id="_fpovKQR1Eeqf9PpP4pxnRA" name="self" represents="_fpovJgR1Eeqf9PpP4pxnRA" coveredBy="_fpovKgR1Eeqf9PpP4pxnRA"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_fpovKgR1Eeqf9PpP4pxnRA" name="main( )" covered="_fpovKQR1Eeqf9PpP4pxnRA"/>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fpovKwR1Eeqf9PpP4pxnRA" name="Test"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

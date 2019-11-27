@@ -1,0 +1,9 @@
+ 1.valueOffset = unsafe.objectFieldOffset
+                (AtomicBoolean.class.getDeclaredField("value"));
+ 2.public V get(int[] stampHolder) {
+        Pair<V> pair = this.pair;
+        stampHolder[0] = pair.stamp;
+        return pair.reference;
+    }
+    该方法用在何种场景中
+ 3.atomicIntegerArray 源码
